@@ -103,9 +103,13 @@ class _LoginJobProviderState extends State<LoginJobProvider> {
               height: 40,
             ),
             Container(
-                height: 50,
-                width: 300,
+                 height: size.height * 0.065,
+              width: size.width * 0.8,
+               
+                decoration: BoxDecoration(
                 color: Colors.teal,
+                borderRadius: BorderRadius.circular(10.0),
+              ),
                 child: Center(
                     child: TextButton(
                         onPressed: () {

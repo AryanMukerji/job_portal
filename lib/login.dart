@@ -43,7 +43,7 @@ class _LoginState extends State<Login> {
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'Name',
+                      hintText: 'Name / नाम',
                       hintStyle: TextStyle(
                         color: Colors.teal,
                         fontSize: 18,
@@ -80,7 +80,7 @@ class _LoginState extends State<Login> {
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'Phone Number',
+                      hintText: 'Phone Number / फ़ोन नंबर',
                       hintStyle: TextStyle(
                         color: Colors.teal,
                         fontSize: 18,
@@ -103,9 +103,13 @@ class _LoginState extends State<Login> {
               height: 40,
             ),
             Container(
-                height: 50,
-                width: 300,
+                height: size.height * 0.065,
+              width: size.width * 0.8,
+                decoration: BoxDecoration(
                 color: Colors.teal,
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+               
                 child: Center(
                     child: TextButton(
                         onPressed: () {

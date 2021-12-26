@@ -59,7 +59,7 @@ class _SeekJobState extends State<SeekJob> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Name',
+                            hintText: 'नाम / Name',
                             hintStyle: TextStyle(
                               color: Colors.teal,
                               fontSize: 18,
@@ -103,7 +103,7 @@ class _SeekJobState extends State<SeekJob> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Age',
+                            hintText: 'उम्र / Age',
                             hintStyle: TextStyle(
                               color: Colors.teal,
                               fontSize: 18,
@@ -145,7 +145,7 @@ class _SeekJobState extends State<SeekJob> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Gender',
+                            hintText: 'लिंग / Gender' ,
                             hintStyle: TextStyle(
                               color: Colors.teal,
                               fontSize: 18,
@@ -187,7 +187,7 @@ class _SeekJobState extends State<SeekJob> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'What work do you do?',
+                            hintText: 'अप क्या काम करते हो? / What work do you do?',
                             hintStyle: TextStyle(
                               color: Colors.teal,
                               fontSize: 18,
@@ -229,7 +229,7 @@ class _SeekJobState extends State<SeekJob> {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'How long have you worked?',
+                            hintText: 'आपने कब तक काम किया है? / How long have you worked?',
                             hintStyle: TextStyle(
                               color: Colors.teal,
                               fontSize: 18,
@@ -263,10 +263,10 @@ class _SeekJobState extends State<SeekJob> {
                       child: Center(
                           child: TextButton(
                               onPressed: () {
-                                
+                                 Navigator.pushNamed(context, 'OptionLogin');
                               },
                               child: Text(
-                                'Hire Me',
+                                'मुझे चुनिएँ / Hire Me',
                                 style: TextStyle(color: Colors.white, fontSize: 22),
                               )))),
                   ),
