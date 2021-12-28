@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast_example/toast_context.dart';
+// import 'package:fluttertoast_example/toast_no_context.dart';
 
-class ProvideJob extends StatefulWidget {
-  const ProvideJob({Key? key}) : super(key: key);
+class JobList extends StatefulWidget {
+  const JobList({Key? key}) : super(key: key);
 
   @override
-  _ProvideJobState createState() => _ProvideJobState();
+  _JobListState createState() => _JobListState();
 }
 
-class _ProvideJobState extends State<ProvideJob> {
+class _JobListState extends State<JobList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +27,7 @@ class _ProvideJobState extends State<ProvideJob> {
               padding: const EdgeInsets.all(20.0),
               child: Center(
                   child: Text(
-                'Welcome to Saksham!',
+                'Welcome to Saksham',
                 style: TextStyle(
                     color: Colors.teal,
                     fontSize: 22,
@@ -52,7 +54,7 @@ class _ProvideJobState extends State<ProvideJob> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          'Suraj Shah',
+                          'वॉशर / Washer',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
@@ -69,25 +71,26 @@ class _ProvideJobState extends State<ProvideJob> {
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
                           child: Column(
                             children: [
-                              Text(
-                                'WASHER',
-                                style: TextStyle(
-                                    color: Colors.teal,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
+                              //         Text(
+                              //           'WASHER',
+                              //           style: TextStyle(
+                              //               color: Colors.teal,
+                              //               fontSize: 20,
+                              //               fontWeight: FontWeight.bold),
+                              //         ),
+                              //          SizedBox(
+                              // height: 5,
+                              //),
+
                               Padding(
                                 padding:
                                     const EdgeInsets.fromLTRB(0, 10, 10, 10),
                                 child: Text(
-                                  'Age: 26',
+                                  'Experience: 3 year/3 साल',
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 20,
+                                    fontSize: 15,
                                     fontWeight: FontWeight.normal,
                                   ),
                                 ),
@@ -95,9 +98,9 @@ class _ProvideJobState extends State<ProvideJob> {
                             ],
                           ),
                         ),
-                        SizedBox(
-                          width: 90,
-                        ),
+
+                        // SizedBox(width: 5,),
+
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
                           child: Container(
@@ -108,26 +111,20 @@ class _ProvideJobState extends State<ProvideJob> {
                             child: TextButton(
                                 onPressed: () {
                                   Fluttertoast.showToast(
-                                    msg: "Hired !",
+                                    msg: "Successful !",
                                     backgroundColor: Colors.grey[200],
                                   );
-                                  Navigator.pushNamed(context, 'OptionLogin');
+                                  Navigator.pushNamed(context, 'SeekJob');
                                 },
                                 child: Text(
-                                  'HIRE',
+                                  'अप्लाई / Apply',
                                   style: TextStyle(
-                                      color: Colors.teal, fontSize: 20),
+                                      color: Colors.teal, fontSize: 15),
                                 )),
                           ),
                         ),
                       ],
                     ),
-
-                    // Row(
-                    //   children: [
-
-                    //   ],
-                    // )
                   ],
                 ),
               ),
@@ -152,7 +149,7 @@ class _ProvideJobState extends State<ProvideJob> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          'Suman Shah',
+                          'सफाई वाला / Cleaner',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
@@ -169,24 +166,25 @@ class _ProvideJobState extends State<ProvideJob> {
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
                           child: Column(
                             children: [
-                              Text(
-                                'PAINTER',
-                                style: TextStyle(
-                                    color: Colors.teal,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
+                              //           Text(
+                              //             'PAINTER',
+                              //             style: TextStyle(
+                              //                 color: Colors.teal,
+                              //                 fontSize: 20,
+                              //                 fontWeight: FontWeight.bold),
+                              //           ),
+                              //            SizedBox(
+                              //   height: 5,
+                              // ),
+
                               Padding(
                                 padding:
                                     const EdgeInsets.fromLTRB(0, 10, 10, 10),
                                 child: Text(
-                                  'Age: 24',
+                                  'Experience: 1 year/1 साल',
                                   style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize: 15,
                                       fontWeight: FontWeight.normal),
                                 ),
                               ),
@@ -194,7 +192,7 @@ class _ProvideJobState extends State<ProvideJob> {
                           ),
                         ),
                         SizedBox(
-                          width: 90,
+                          width: 5,
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
@@ -206,15 +204,15 @@ class _ProvideJobState extends State<ProvideJob> {
                             child: TextButton(
                                 onPressed: () {
                                   Fluttertoast.showToast(
-                                    msg: "Hired !",
+                                    msg: "Successful !",
                                     backgroundColor: Colors.grey[200],
                                   );
-                                  Navigator.pushNamed(context, 'OptionLogin');
+                                  Navigator.pushNamed(context, 'SeekJob');
                                 },
                                 child: Text(
-                                  'HIRE',
+                                  'अप्लाई / Apply',
                                   style: TextStyle(
-                                      color: Colors.teal, fontSize: 20),
+                                      color: Colors.teal, fontSize: 15),
                                 )),
                           ),
                         ),
@@ -244,7 +242,7 @@ class _ProvideJobState extends State<ProvideJob> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          'Saurabh Shah',
+                          'रसोइया / Cook',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
@@ -261,25 +259,26 @@ class _ProvideJobState extends State<ProvideJob> {
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
                           child: Column(
                             children: [
-                              Text(
-                                'CLEANER',
-                                style: TextStyle(
-                                    color: Colors.teal,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
+                              //           Text(
+                              //             'CLEANER',
+                              //             style: TextStyle(
+                              //                 color: Colors.teal,
+                              //                 fontSize: 20,
+                              //                 fontWeight: FontWeight.bold),
+                              //           ),
+                              //            SizedBox(
+                              //   height: 5,
+                              // ),
+
                               Padding(
                                 padding:
                                     const EdgeInsets.fromLTRB(0, 10, 10, 10),
                                 child: Text(
-                                  'Age: 28',
+                                  'Experience: 2 year/2 साल',
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 20,
+                                    fontSize: 15,
                                     fontWeight: FontWeight.normal,
                                   ),
                                 ),
@@ -288,7 +287,7 @@ class _ProvideJobState extends State<ProvideJob> {
                           ),
                         ),
                         SizedBox(
-                          width: 90,
+                          width: 2,
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
@@ -300,15 +299,15 @@ class _ProvideJobState extends State<ProvideJob> {
                             child: TextButton(
                                 onPressed: () {
                                   Fluttertoast.showToast(
-                                    msg: "Hired !",
+                                    msg: "Successful !",
                                     backgroundColor: Colors.grey[200],
                                   );
-                                  Navigator.pushNamed(context, 'OptionLogin');
+                                  Navigator.pushNamed(context, 'SeekJob');
                                 },
                                 child: Text(
-                                  'HIRE',
+                                  'अप्लाई / Apply',
                                   style: TextStyle(
-                                      color: Colors.teal, fontSize: 20),
+                                      color: Colors.teal, fontSize: 15),
                                 )),
                           ),
                         ),
@@ -344,7 +343,7 @@ class _ProvideJobState extends State<ProvideJob> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          'Shubham Shah',
+                          'वॉशर / Washer',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
@@ -361,25 +360,26 @@ class _ProvideJobState extends State<ProvideJob> {
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
                           child: Column(
                             children: [
-                              Text(
-                                'WASHER',
-                                style: TextStyle(
-                                    color: Colors.teal,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
+                              //           Text(
+                              //             'WASHER',
+                              //             style: TextStyle(
+                              //                 color: Colors.teal,
+                              //                 fontSize: 20,
+                              //                 fontWeight: FontWeight.bold),
+                              //           ),
+                              //            SizedBox(
+                              //   height: 5,
+                              // ),
+
                               Padding(
                                 padding:
                                     const EdgeInsets.fromLTRB(0, 10, 10, 10),
                                 child: Text(
-                                  'Age: 30',
+                                  'Experience: 2 years/2 साल',
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 20,
+                                    fontSize: 15,
                                     fontWeight: FontWeight.normal,
                                   ),
                                 ),
@@ -387,9 +387,9 @@ class _ProvideJobState extends State<ProvideJob> {
                             ],
                           ),
                         ),
-                        SizedBox(
-                          width: 90,
-                        ),
+
+                        //SizedBox(width: ,),
+
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 10, 10, 10),
                           child: Container(
@@ -400,15 +400,15 @@ class _ProvideJobState extends State<ProvideJob> {
                             child: TextButton(
                                 onPressed: () {
                                   Fluttertoast.showToast(
-                                    msg: "Hired !",
+                                    msg: "Successful !",
                                     backgroundColor: Colors.grey[200],
                                   );
-                                  Navigator.pushNamed(context, 'OptionLogin');
+                                  Navigator.pushNamed(context, 'SeekJob');
                                 },
                                 child: Text(
-                                  'HIRE',
+                                  'अप्लाई / Apply',
                                   style: TextStyle(
-                                      color: Colors.teal, fontSize: 20),
+                                      color: Colors.teal, fontSize: 15),
                                 )),
                           ),
                         ),

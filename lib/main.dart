@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saksham/list_jobs.dart';
 import 'package:saksham/login.dart';
 import 'package:saksham/login_job_provider.dart';
 import 'package:saksham/option.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         'SeekJob': (context) => SeekJob(),
         'ProvideJob': (context) => ProvideJob(),
         'LoginJobProvider': (context) => LoginJobProvider(),
+        'JobList': (context) => JobList(),
       },
     );
   }

@@ -104,16 +104,15 @@ class _LoginState extends State<Login> {
             ),
             Container(
                 height: size.height * 0.065,
-              width: size.width * 0.8,
+                width: size.width * 0.8,
                 decoration: BoxDecoration(
-                color: Colors.teal,
-                borderRadius: BorderRadius.circular(10.0),
-              ),
-               
+                  color: Colors.teal,
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
                 child: Center(
                     child: TextButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, 'SeekJob');
+                          Navigator.pushNamed(context, 'JobList');
                         },
                         child: Text(
                           'Login',
